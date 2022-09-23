@@ -1,0 +1,54 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#login-container {
+    width: 460px;
+    margin: 0 auto;
+}
+
+form label,
+form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form div {
+    margin: 16px 0px;
+    position: relative;
+}
+
+[data-state="false"] input{
+    border: 1px solid red;
+}
+[data-state="true"] input{
+    border: 1px solid green;
+}
+
+i {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+}
+.fa-check {
+    color: green;
+    visibility: hidden;
+}
+.fa-xmark {
+    color: red;
+    visibility: hidden;
+}
+[data-state="false"] .fa-xmark,
+[data-state="true"] .fa-check {
+    visibility: visible;
+}

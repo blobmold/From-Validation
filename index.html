@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="/main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div id="login-container">
+                <form action="post" class="form" id="form" name="form">
+                    <div>
+                        <label for="username">Username:</label>
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <input type="text" name="username" id="username" required/>    
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <input type="password" name="password" id="password" required />    
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Submit" name="submit" />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
